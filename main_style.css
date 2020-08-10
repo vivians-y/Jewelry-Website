@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    scrollbar-width: thin;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block
+}
+
+:active {
+    outline: none
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+
+input {
+    line-height: normal;
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+.section {
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    color: #1c1b1b;
+    box-shadow: 0 -1px #fff inset;
+    -webkit-transition: background 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out
+}
+
+main {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.image-background {
+    width: 100%;
+    position: relative;
+}
+
+.intro-content {
+    position: absolute;
+    bottom: 50vh;
+    padding: 0 calc(100px + 10vw);
+    color: white;
+    font-family: Avenir, serif;
+}
+
+.intro-content h2 {
+    font-size: 100px;
+}
+
+.intro-content h3 {
+    padding: 40px 0 0 6px;
+    font-size: 30px;
+}
+
+.header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px 18px
+}
+
+.header-icon {
+    display: block;
+    line-height: 1;
+
+}
+
+.header-transparent {
+    background: transparent;
+    color: white;
+}
+
+.header-icon .nav {
+    height: 30px;
+    width: 30px
+}
+
+.header-icon .cart {
+    width: 30px;
+    height: 30px
+}
+
+@media screen and (min-width: 700px) {
+    .header-wrapper {
+        padding: 18px 30px
+    }
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
