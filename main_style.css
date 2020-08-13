@@ -25,7 +25,7 @@ body {
     font-family: 'Asar', serif, "Times New Roman";
 }
 
-ul, ol {
+ul, ol, button {
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -123,11 +123,11 @@ h3 {
     font-size: 40px;
 }
 
-h4{
+h4 {
     font-size: 30px;
 }
 
-p{
+p {
     font-size: 24px;
 }
 
@@ -135,15 +135,20 @@ p{
     font-size: 100px;
 }
 
-.big-text{
+.big-text {
     font-size: 70px;
 }
 
-.grey-text{
+.grey-text {
     color: #a9a9a9;
 }
 
-footer p{
+.avenir {
+    font-family: Avenir, serif;
+!important;
+}
+
+footer p {
     color: white;
 }
 
@@ -220,10 +225,6 @@ footer p{
         padding: 18px 30px
     }
 
-    .flex-col-wrapper {
-        height: auto;
-    }
-
     .item {
         width: 100%;
     }
@@ -243,23 +244,31 @@ footer p{
     padding: 20px 55px
 }
 
-.padding-small{
+.padding-small {
     padding: 30px;
 }
 
 .padding-medium {
-    padding: 70px;
+    padding: 60px;
 }
 
 .padding-large {
     padding: 120px;
 }
 
+.padding-right-small {
+    padding-right: 40px;
+}
+
+.padding-right-med {
+    padding-right: 92px;
+}
+
 .margin-top {
     margin-top: 100px;
 }
 
-.margin-top-med{
+.margin-top-med {
     margin-top: 60px;
 }
 
@@ -304,19 +313,24 @@ footer p{
     opacity: 1;
 }
 
-
-
-.flex-col-wrapper {
-
+.item-1 {
     width: 100%;
 }
 
-.item-2{
+.item-2 {
     width: 50%;
 }
 
-.item-4{
+.item-4 {
     width: 25%;
+}
+
+.item-7 {
+    width: 14.2857%;
+}
+
+.item3-7 {
+    width: 42.8571%;
 }
 
 .item {
@@ -335,19 +349,19 @@ footer p{
     display: inline-block;
 }
 
-.product-header-info{
+.product-header-info {
     margin-top: -50px;
     padding-left: 35px;
     font-family: Avenir;
 }
 
-.product-header-right{
+.product-header-right {
     text-align: right;
     font-family: Avenir;
     padding-top: 100px;
 }
 
-select{
+select {
     padding-top: 7px;
     padding-right: 14px;
     padding-left: 14px;
@@ -357,4 +371,35 @@ select{
     margin-left: 30px;
     margin-bottom: 0;
     font-size: 19px;
+}
+
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.collapsible * {
+    float: left;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-size: 30px;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
